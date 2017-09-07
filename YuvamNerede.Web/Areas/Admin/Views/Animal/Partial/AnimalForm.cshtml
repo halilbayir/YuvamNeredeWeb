@@ -1,0 +1,69 @@
+﻿@model YuvamNerede.Web.Models.SiteDropdownModel.AnimalSiteVM
+
+<div class="box-body">
+    @*<div class="form-group">
+            @Html.LabelFor(x => x.CategoryName)
+            @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control", @placeholder = "Hayvan Kategorisi" })
+            @Html.ValidationMessageFor(x => x.CategoryName)
+        </div>*@
+
+    <div class="form-group">
+    <label>Categories</label>
+       @Html.DropDownList("CategoryID",Model.drpCategories,new { @class="form-control"})
+    </div>
+    @*<div class="form-group">
+        <div class="dropup">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                @foreach (var item in ViewBag.CategoryList)
+                {
+                    <li><a href="#">@item.Name</a></li>
+                }
+            </ul>
+        </div>
+    </div>*@
+    @*<div class="form-group">
+        @Html.LabelFor(x => x.GenusName)
+        @Html.TextBoxFor(x => x.GenusName, new { @class = "form-control", @placeholder = "Cinsi" })
+        @Html.ValidationMessageFor(x => x.GenusName)
+    </div>*@
+    <div class="form-group">
+        <label>Genus</label>
+        @Html.DropDownList("GenusID", Model.drpGenus, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @placeholder = "Adı" })
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Age)
+        @Html.TextBoxFor(x => x.Age, new { @class = "form-control", @placeholder = "Hayvan yaşı" })
+        @Html.ValidationMessageFor(x => x.Age)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Location)
+        @Html.TextBoxFor(x => x.Location, new { @class = "form-control", @placeholder = "Bulunduğu Şehir" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Color)
+        @Html.TextBoxFor(x => x.Color, new { @class = "form-control", @placeholder = "Rengi" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.ImagePath)
+        <input type="file" multiple name="ImagePath" accept="image/gif, image/jpeg, image/png" />
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Description)
+        @Html.TextAreaFor(x => x.Description, new { @class = "ckeditor" })
+    </div>
+
+</div>
+<div class="box-footer">
+    <button type="submit" class="btn btn-primary">Kayıt</button>
+</div>
+

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuvamNerede.Model", "YuvamNerede.Model\YuvamNerede.Model.csproj", "{D23552FF-DA6B-4263-A331-80F0D286B483}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Model", "1-Model", "{04D3211B-AAC7-40A8-88DD-17E66F26A287}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Web", "3-Web", "{0061701E-C3BD-4580-8C79-44ECBF4432A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuvamNerede.Web", "YuvamNerede.Web\YuvamNerede.Web.csproj", "{C823926C-EE93-46E8-8635-2B7C169F0713}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Services", "2-Services", "{5567EFB9-D8D3-40BF-80FC-4E313A55D0F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuvamNerede.Service", "YuvamNerede.Service\YuvamNerede.Service.csproj", "{6BBCAD3C-02B6-43BD-9C05-8E1D26BC5875}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D23552FF-DA6B-4263-A331-80F0D286B483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23552FF-DA6B-4263-A331-80F0D286B483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23552FF-DA6B-4263-A331-80F0D286B483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23552FF-DA6B-4263-A331-80F0D286B483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C823926C-EE93-46E8-8635-2B7C169F0713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C823926C-EE93-46E8-8635-2B7C169F0713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C823926C-EE93-46E8-8635-2B7C169F0713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C823926C-EE93-46E8-8635-2B7C169F0713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BBCAD3C-02B6-43BD-9C05-8E1D26BC5875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBCAD3C-02B6-43BD-9C05-8E1D26BC5875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBCAD3C-02B6-43BD-9C05-8E1D26BC5875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBCAD3C-02B6-43BD-9C05-8E1D26BC5875}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D23552FF-DA6B-4263-A331-80F0D286B483} = {04D3211B-AAC7-40A8-88DD-17E66F26A287}
+		{C823926C-EE93-46E8-8635-2B7C169F0713} = {0061701E-C3BD-4580-8C79-44ECBF4432A4}
+		{6BBCAD3C-02B6-43BD-9C05-8E1D26BC5875} = {5567EFB9-D8D3-40BF-80FC-4E313A55D0F6}
+	EndGlobalSection
+EndGlobal
