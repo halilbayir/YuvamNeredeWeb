@@ -4,13 +4,13 @@
     Layout = "~/Views/_Shared/SiteLayout.cshtml";
 }
 
-@model YuvamNerede.Model.Models.ViewModels.AnimalSiteVM
+@model YuvamNerede.Web.Models.SiteDropdownModel.AnimalSiteVM
 
 <div class="col-md-8 col-md-offset-2">
     <h2>@Model.Name</h2>
     <div class="fh5co-spacer fh5co-spacer-sm"></div>
     <p>
-        <img src="~/Areas/Admin/Content/Site/images/blogpost/@Model.ImagePath" alt="@Model.GenusName" class="img-rounded img-responsive">
+        <img src="~/Areas/Admin/Content/Site/images/blogpost/@Model.Image" alt="@Model.Image" class="img-rounded img-responsive">
     </p>
     <p>@Html.Raw(Model.Description)</p>
 </div>

@@ -20,6 +20,7 @@ namespace YuvamNerede.Model.Models.ViewModels
         public int CategoryID { get; set; }
         public int GenusID { get; set; }
         public HttpPostedFileBase ImagePath { get; set; }
+        public string Img { get; set; }
 
     }
 }

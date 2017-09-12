@@ -17,6 +17,7 @@ namespace YuvamNerede.Web.Models.SiteDropdownModel
         public int CategoryID { get; set; }
         public int GenusID { get; set; }
         public HttpPostedFileBase ImagePath { get; set; }
+        public string Image { get; set; }
         public IEnumerable<SelectListItem> drpCategories { get; set; }
         public IEnumerable<SelectListItem> drpGenus { get; set; }
     }

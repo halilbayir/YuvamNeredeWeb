@@ -23,6 +23,7 @@ namespace YuvamNerede.Web.Controllers
                 Description = x.Description,
                 Location = x.Location,
                 Color = x.Color,
+                Img=x.Image
             }).ToList();
             return View(result);
         }

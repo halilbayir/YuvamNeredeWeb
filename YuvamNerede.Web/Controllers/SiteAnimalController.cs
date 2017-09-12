@@ -15,7 +15,14 @@ namespace YuvamNerede.Web.Controllers
         {
             var animal = db.Animal.FirstOrDefault(x => x.ID == id);
             AnimalSiteVM model = new AnimalSiteVM();
-              
+            model.Name= animal.Name;
+            model.ID = animal.ID;
+            model.GenusID = animal.GenusId;
+            model.CategoryID = animal.CategoryId;
+            model.Description = animal.Description;
+            model.Color = animal.Color;
+            model.Location = animal.Location;
+            model.Image = animal.Image;
             return View(model);
         }
     }
